@@ -38,8 +38,14 @@ public class Boletin22_1 {
                     System.out.println("hay " + buz.numeroDeCorreos(lista) + " correo(s)");
                     break;
                 case 3:
-                    buz.mostrarPorLer(lista);
-                    break;
+                    boolean si=buz.porLer(lista);
+                              if(si==true){
+                                  JOptionPane.showMessageDialog(null,"Tiene correos por leer");
+                              }
+                              else{
+                                  JOptionPane.showMessageDialog(null,"No tiene correos por leer");
+                              }
+                              break;
                 case 4:
                     System.out.println(buz.amosaPrimerNoLeido(lista));
                     break;
